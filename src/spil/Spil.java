@@ -4,13 +4,19 @@ public class Spil {
 
 	public static void main(String[] args) {
 
+		
+		Rafflebæger r2 = new Rafflebæger();
+		//Nyt objekt for Terning
 		Terning t1 = new Terning();
-		t1.roll();
-		
+
+		//Nyt objekt for Terning
 		Terning t2 = new Terning();
-		t2.roll();
+
 		
-		System.out.println(t1.getFacevalue() + ", " + t2.getFacevalue() +"\tSum = " + (t1.getFacevalue()+t2.getFacevalue()));
+		System.out.println(r2.getTerning() + ", " + r2.getTerning2() +"\tSum = " + (r2.getTerning() + r2.getTerning2()));
+		
+	
+		
 	}
 
 }
