@@ -1,13 +1,13 @@
 package spil;
 
-public class Terning {
+public class Dice {
 	private int facevalue;
 	private int sides;
 
-	public Terning(){
+	public Dice(){
 		this(6);
 	}
-	public Terning(int sides) {
+	public Dice(int sides) {
 		this.sides = sides;
 	}
 

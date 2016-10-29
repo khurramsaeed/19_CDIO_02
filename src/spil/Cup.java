@@ -4,8 +4,8 @@ public class Cup {
 	
 	
 
-	Terning t1 = new Terning();
-	Terning t2 = new Terning();
+	Dice t1 = new Dice();
+	Dice t2 = new Dice();
 	
 	public Cup(){
 		t1.roll();
@@ -13,14 +13,14 @@ public class Cup {
 		
 	}
 	
-	public int getTerning(){
+	public int getDice(){
 		int z = t1.getFacevalue();
 		
 		return z;
 	
 	}
 	
-	public int getTerning2(){
+	public int getDice2(){
 		int z = t2.getFacevalue();
 		
 		return z;
