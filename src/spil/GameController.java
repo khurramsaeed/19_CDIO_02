@@ -4,12 +4,17 @@ public class GameController {
 
 	public static void main(String[] args) {
 
+		Player p1 = new Player();
 		
 		Cup r2 = new Cup();
+		Board b1 = new Board();
 		
-		System.out.println(r2.getDice() + ", " + r2.getDice2() +"\tSum = " + (r2.getDice() + r2.getDice2()));
+		System.out.println(/*p1.playerName1()*/ " har slået: "+ r2.sum());
 		
-	
+
+		
+		System.out.println(b1.Prik());
+		
 		
 	}
 
