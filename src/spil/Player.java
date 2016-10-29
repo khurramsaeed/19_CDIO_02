@@ -22,5 +22,9 @@ public class Player {
 
 		return Player2;
 	}
+	
+	public void playerBank(){
+		
+	}
 
 }

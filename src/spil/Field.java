@@ -13,7 +13,11 @@ public class Field {
 		
 		
 		
-	b1.arraylist[1]+=300;
+	//if(b1.x == b1.arraylist[1]){
+		
+		
+	//}
+			
 	}
 	
 
