@@ -18,8 +18,8 @@ public class Cup {
 
 		int x = t1.getFacevalue();
 		int y = t2.getFacevalue();
-// mangler y
-		return x;
+		
+		return x + y;
 
 	}
 }

@@ -34,6 +34,6 @@ public class Board {
 		
 		
 		
-		return 300;
+		return 0;
 	}
 }
