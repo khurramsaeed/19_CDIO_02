@@ -1,13 +1,13 @@
 package spil;
 
-public class Rafflebæger {
+public class Cup {
 	
 	
 
 	Terning t1 = new Terning();
 	Terning t2 = new Terning();
 	
-	public Rafflebæger(){
+	public Cup(){
 		t1.roll();
 		t2.roll();
 		

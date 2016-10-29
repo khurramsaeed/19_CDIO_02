@@ -5,7 +5,7 @@ public class Spil {
 	public static void main(String[] args) {
 
 		
-		Rafflebæger r2 = new Rafflebæger();
+		Cup r2 = new Cup();
 		//Nyt objekt for Terning
 		Terning t1 = new Terning();
 
