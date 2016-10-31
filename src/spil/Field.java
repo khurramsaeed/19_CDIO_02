@@ -2,23 +2,26 @@ package spil;
 
 public class Field {
 	
-	Board b1 = new Board();
+	Coin c1 = new Coin();
 	
+	private int effect;
+	private int effectValue;
+
 	public Field(){
 		
 	}
-	
-	public void fieldValue(){
-	
-		
-		
-		
-	//if(b1.x == b1.arraylist[1]){
-		
-		
-	//}
-			
+	public Field(int effect) {
+		this.effect= effect;
+	}
+
+	public int getEffectValue() {
+		return effectValue;
 	}
 	
-
+	public void effectValue(){
+		
+		this.effectValue = c1.Beholdning + effect;
+		
+	}
 }
+	

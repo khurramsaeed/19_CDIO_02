@@ -4,7 +4,7 @@ public class Cup {
 	
 	//Oprettelse af Objekter
 	//Ændre type terning, Dice(terningStørrelse)
-	Dice t1 = new Dice();
+	Dice t1 = new Dice(6);
 	Dice t2 = new Dice();
 
 	public Cup() {
@@ -22,4 +22,9 @@ public class Cup {
 		return x + y;
 
 	}
+	
+//	public int getSum (){
+//		
+//		sum()
+//	}
 }
