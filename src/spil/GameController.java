@@ -29,8 +29,7 @@ public class GameController {
 		//Test af coin
 		//System.out.println(p.Player1 + " og " + p.Player2 + " Jeres startsbeholdning er " + c1.getFeltEffect());
 		
-		
-		System.out.println(c1.getFeltEffect());
+
 		
 		//Test af cup/dice
 		System.out.println(p.Player1 + " slog " + r2.sum());
