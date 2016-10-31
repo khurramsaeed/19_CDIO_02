@@ -1,5 +1,6 @@
 package spil;
 
+
 public class Cup {
 	
 	//Oprettelse af Objekter

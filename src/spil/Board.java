@@ -1,5 +1,6 @@
 package spil;
 
+
 import java.lang.reflect.Array;
 
 public class Board {

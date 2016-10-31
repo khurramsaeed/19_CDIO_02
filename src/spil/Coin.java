@@ -1,5 +1,6 @@
 package spil;
 
+
 public class Coin {
 	
 Field f1 = new Field(10);
