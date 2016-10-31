@@ -1,5 +1,5 @@
-package spil;
-
+package Test;
+import spil.Coin;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
