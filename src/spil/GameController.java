@@ -29,6 +29,9 @@ public class GameController {
 	String Player1;
 	String Player2;
 	
+	
+	
+	
 	public static void main(String[] args) {
 		GameController game = new GameController();
 		game.setPlayerName();
@@ -38,7 +41,7 @@ public class GameController {
 		game.sc.nextInt();
 		game.playerTurn();
 		
-		if(game.f1.getEffectValue() >= 3000){
+		if(game.f1.effectValue() >= 3000){
 			System.out.println("You won");
 		
 		}
@@ -46,12 +49,13 @@ public class GameController {
 		game.sc.nextInt();
 		game.playerTurn2();
 		
-		if(game.f1.getEffectValue() >= 3000){
+		if(game.f1.effectValue() >= 3000){
 			System.out.println("You won");
 			
 		}
 		}
 	}
+	
 
 		public void setPlayerName(){
 			
@@ -93,61 +97,61 @@ public class GameController {
 		
 		
 		public void setNewBalance(int z){
+			f1.bank.setSum(1000);
 		switch (b1.movePiece(z)) {
-
+		
 		case 2:
-			f2.effectValue();
-			System.out.println("Your balance is now " + f2.getEffectValue() + f2.toString());
+			f1.bank.addsum(f2.effectValue());
+			System.out.println(f1.bank.getbalance());
 			break;
 
 		case 3:
-			f3.effectValue();
-			System.out.println("Your balance is now " + f3.getEffectValue() + f3.toString());
+			f1.bank.addsum(f3.effectValue());
+			System.out.println(f1.bank.getbalance());
 			break;
 
 		case 4:
-			f4.effectValue();
-			System.out.println("Your balance is now " + f4.getEffectValue() + f4.toString());
+			f1.bank.addsum(f4.effectValue());
+			System.out.println(f1.bank.getbalance());
 			break;
 
 		case 5:
-			f5.effectValue();
-			System.out.println("Your balance is now " + f5.getEffectValue() + f5.getEffectValue());
+			f1.bank.addsum(f5.effectValue());
+			System.out.println(f1.bank.getbalance());
 			break;
 
 		case 6:
-			f6.effectValue();
-			System.out.println("Your balance is now " + f6.getEffectValue());
+			f1.bank.addsum(f6.effectValue());
+			System.out.println(f1.bank.getbalance());
 			break;
 
 		case 7:
-			f7.effectValue();
-			System.out.println("Your balance is now " + f7.getEffectValue());
+			f1.bank.addsum(f7.effectValue());
+			System.out.println(f1.bank.getbalance());
 			break;
 
 		case 8:
-			f8.effectValue();
-			System.out.println("Your balance is now " + f8.getEffectValue());
+			f1.bank.addsum(f8.effectValue());
+			System.out.println(f1.bank.getbalance());
 			break;
-
 		case 9:
-			f9.effectValue();
-			System.out.println("Your balance is now " + f9.getEffectValue());
+			f1.bank.addsum(f9.effectValue());
+			System.out.println(f1.bank.getbalance());
 			break;
 
 		case 10:
-			f10.effectValue();
-			System.out.println("Your balance is now " + f10.getEffectValue());
+			f1.bank.addsum(f10.effectValue());
+			System.out.println(f1.bank.getbalance());
 			break;
 
 		case 11:
-			f11.effectValue();
-			System.out.println("Your balance is now " + f11.getEffectValue());
+			f1.bank.addsum(f11.effectValue());
+			System.out.println(f1.bank.getbalance());
 			break;
 
 		case 12:
-			f12.effectValue();
-			System.out.println("Your balance is now " + f12.getEffectValue());
+			f1.bank.addsum(f12.effectValue());
+			System.out.println(f1.bank.Balance);
 			break;
 
 		}

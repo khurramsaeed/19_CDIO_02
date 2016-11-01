@@ -4,10 +4,9 @@ package spil;
 public class Field {
 	
 	Bank bank = new Bank();
-	Bank bank2 = new Bank();
 	
-	private int effect;
-	private int effectValue;
+	int effect;
+	int effectValue;
 	private String Details;
 	private String Name;
 	private boolean extraTurn; 
@@ -34,10 +33,11 @@ public class Field {
 		return true;
 	}
 	
-	public void effectValue(){
+	public int effectValue(){
 		
 		this.effectValue = bank.Balance + effect;
-		this.effectValue = bank2.Balance + effect;
+		
+		return bank.Balance + effect;
 	}
 	
 	public String toString(){
@@ -45,7 +45,7 @@ public class Field {
 		
 		
 		
-		return "Effect: " + effect + "\n" +
+		return "\n" + "Effect: " + effect + "\n" +
 			    "Name: " + Name + "\n" + 
 				"Details: " + Details + "\n";
 	}

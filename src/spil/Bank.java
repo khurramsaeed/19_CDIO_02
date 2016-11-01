@@ -2,30 +2,21 @@ package spil;
 
 
 public class Bank {
-	
-Field Field = new Field();
 
 Board b1 = new Board();
 	
 int Balance;
-int newBalance;
 	
 public Bank(){
-	
-	this.Balance = 1000;
+	this.Balance = Balance;
 }
 
-//public void getNewBalance(){
-//	
-//	this.Balance = Field.getEffectValue();
-//	
-//}
-
-public int setNewBalance(int newBalance){
-	this.newBalance = Balance + Field.getEffectValue(); 
-	
-	return newBalance;
+public void setSum(int x){
+	this.Balance = x;
 }
 
+public void addsum(int y){
+	this.Balance += y;
+}
 
 }
