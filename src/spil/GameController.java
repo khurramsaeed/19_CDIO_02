@@ -2,30 +2,25 @@ package spil;
 
 import java.util.Scanner;
 
-public class GameController {
 
-	Field f2 = new Field(250, "Tower",
-			"You have reached the Tower on your magical journey, in the Tower you found a treasure!", false);
+
+public class GameController {
+	
+	Field f1 = new Field();
+	Field f2 = new Field(250, "Tower","You have reached the Tower on your magical journey, in the Tower you found a treasure!", false);
 	Field f3 = new Field(-100, "Crater", "You fell in a crater. Ouch!", false);
-	Field f4 = new Field(100, "Palace Gates", "You reached the place gates, you recieve a little welcome reward",
-			false);
+	Field f4 = new Field(100, "Palace Gates", "You reached the place gates, you recieve a little welcome reward",false);
 	Field f5 = new Field(-20, "Cold Desert", "It's too cold you need a new coat", false);
 	Field f6 = new Field(180, "Walled city", "You reached the Walled City, you recieve a Reward", false);
 	Field f7 = new Field(0, "Monastary", "You got a free place to sleep. Time to to take a rest!", false);
-	Field f8 = new Field(-70, "Black Cave",
-			"You reached the scary Black Cave and get robbed by some bandits who were roaming around the area",
-			false);
-	Field f9 = new Field(60, "Huts in the Mountain",
-			"You find some empty huts in the mountain and find some forgotten cash", false);
-	Field f10 = new Field(-80, "The Werewall (Werewolf - wall)",
-			"You get attacked by some werefolf, but you get a chance to run away", true);
+	Field f8 = new Field(-70, "Black Cave","You reached the scary Black Cave and get robbed by some bandits who were roaming around the area",false);
+	Field f9 = new Field(60, "Huts in the Mountain","You find some empty huts in the mountain and find some forgotten cash", false);
+	Field f10 = new Field(-80, "The Werewall (Werewolf - wall)","You get attacked by some werefolf, but you get a chance to run away", true);
 	Field f11 = new Field(-50, "The pit", "You fell in a pit. Ouch!", false);
 	Field f12 = new Field(650, "Goldmine", "Holy shit is that gold?! You are rich!", false);
 	
 	
 	Player p = new Player();
-
-	Cup r2 = new Cup();
 
 	Board b1 = new Board();
 	
@@ -37,8 +32,25 @@ public class GameController {
 	public static void main(String[] args) {
 		GameController game = new GameController();
 		game.setPlayerName();
+		while(true){
+			
+		System.out.println("Press 1 to roll");
+		game.sc.nextInt();
 		game.playerTurn();
 		
+		if(game.f1.getEffectValue() >= 3000){
+			System.out.println("You won");
+		
+		}
+		System.out.println("Press 2 to roll");
+		game.sc.nextInt();
+		game.playerTurn2();
+		
+		if(game.f1.getEffectValue() >= 3000){
+			System.out.println("You won");
+			
+		}
+		}
 	}
 
 		public void setPlayerName(){
@@ -55,18 +67,33 @@ public class GameController {
 			
 		}
 			
+		
 		public void playerTurn(){
 			
-			System.out.println(Player1 + " rolled " + r2.sum());
+			Cup c2 = new Cup();
 			
-			System.out.println(Player1 + " landed on field: " + b1.movePiece(r2.sum()));
+			System.out.println(Player1 + " rolled " + c2.sum());
 			
+			System.out.println(Player1 + " landed on field: " + b1.movePiece(c2.sum()));
+			
+			setNewBalance(c2.sum());
 			
 		}	
 		
+		public void playerTurn2(){
+			
+			Cup c3 = new Cup();
+			
+			System.out.println(Player2 + " rolled " + c3.sum());
+			
+			System.out.println(Player2 + " landed on field: " + b1.movePiece(c3.sum()));
+			
+			setNewBalance(c3.sum());
+		}	
 		
-		public void setNewBalance(){
-		switch (b1.movePiece(r2.sum())) {
+		
+		public void setNewBalance(int z){
+		switch (b1.movePiece(z)) {
 
 		case 2:
 			f2.effectValue();
@@ -75,17 +102,17 @@ public class GameController {
 
 		case 3:
 			f3.effectValue();
-			System.out.println("Your balance is now " + f3.getEffectValue());
+			System.out.println("Your balance is now " + f3.getEffectValue() + f3.toString());
 			break;
 
 		case 4:
 			f4.effectValue();
-			System.out.println("Your balance is now " + f4.getEffectValue());
+			System.out.println("Your balance is now " + f4.getEffectValue() + f4.toString());
 			break;
 
 		case 5:
 			f5.effectValue();
-			System.out.println("Your balance is now " + f5.getEffectValue());
+			System.out.println("Your balance is now " + f5.getEffectValue() + f5.getEffectValue());
 			break;
 
 		case 6:
@@ -125,19 +152,6 @@ public class GameController {
 
 		}
 
-		// while(true){
-		//
-		//
-		//// //Test af cup/dice
-		//// System.out.println(p.Player1 + " rolled " + r2.sum());
-		////
-		////
-		////
-		//// System.out.println(p.Player1 + " landed on field: " +
-		// b1.movePiece(r2.sum()));
-		//// }
-		//
-		// //}
 
 	}
 }

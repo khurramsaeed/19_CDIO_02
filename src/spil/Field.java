@@ -4,6 +4,7 @@ package spil;
 public class Field {
 	
 	Bank bank = new Bank();
+	Bank bank2 = new Bank();
 	
 	private int effect;
 	private int effectValue;
@@ -36,7 +37,7 @@ public class Field {
 	public void effectValue(){
 		
 		this.effectValue = bank.Balance + effect;
-		
+		this.effectValue = bank2.Balance + effect;
 	}
 	
 	public String toString(){
