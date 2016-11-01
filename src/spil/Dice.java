@@ -19,6 +19,7 @@ public class Dice {
 	public void roll(){
 		this.facevalue = (int)(Math.random()*sides) +1;
 		
+		
 	}
 	
 	public int testRollValue(){

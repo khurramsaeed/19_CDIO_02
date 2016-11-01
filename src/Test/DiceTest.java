@@ -21,6 +21,7 @@ public class DiceTest {
           if(result==1){
               tal1++;
           }
+          
           if(result==2){
               tal2++;
           }
