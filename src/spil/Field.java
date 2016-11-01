@@ -35,7 +35,7 @@ public class Field {
 	
 	public void effectValue(){
 		
-		this.effectValue = bank.Inventory + effect;
+		this.effectValue = bank.Balance + effect;
 		
 	}
 	

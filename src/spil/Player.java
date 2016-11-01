@@ -6,27 +6,17 @@ import java.util.Scanner;
 public class Player {
 	Scanner sc = new Scanner(System.in);
 	
-	String Player1;
-	String Player2;
+	String PlayerName;
 
 	public Player() {
 
 	}
 
-	public String playerName1() {
-		this.Player1 = sc.nextLine();
+	public String getPlayerName(String PlayerName) {
+		this.PlayerName = PlayerName;
 		
-		return Player1;
+		return PlayerName;
 	}
 
-	public String playerName2() {
-		this.Player2 = sc.nextLine();
-		
-		return Player2;
-	}
-	
-	public void playerBank(){
-		
-	}
 
 }

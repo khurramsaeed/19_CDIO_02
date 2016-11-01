@@ -6,11 +6,11 @@ public class Bank {
 
 Board b1 = new Board();
 	
-int Inventory;
+int Balance;
 	
 public Bank(){
 	
-	this.Inventory = 1000;
+	this.Balance = 1000;
 }
 
 }
