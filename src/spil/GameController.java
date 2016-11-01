@@ -8,17 +8,17 @@ public class GameController {
 		
 		Cup r2 = new Cup();
 		
-		Field f2 = new Field(250);
-		Field f3 = new Field(-100);
-		Field f4 = new Field(100);
-		Field f5 = new Field(-20);
-		Field f6 = new Field(180);
-		Field f7 = new Field(0);
-		Field f8 = new Field(-70);
-		Field f9 = new Field(60);
-		Field f10 = new Field(-80);
-		Field f11 = new Field(-50);
-		Field f12 = new Field(650);
+		Field f2 = new Field(250, "Tower", "You have reached the Tower on your magical journey, in the Tower you found a treasure!", false);
+		Field f3 = new Field(-100, "Crater", "You fell in a crater. Ouch!", false);
+		Field f4 = new Field(100, "Palace Gates", "You reached the place gates, you recieve a little welcome reward", false);
+		Field f5 = new Field(-20, "Cold Desert", "It's too cold you need a new coat", false);
+		Field f6 = new Field(180, "Walled city", "You reached the Walled City, you recieve a Reward", false);
+		Field f7 = new Field(0, "Monastary", "You got a free place to sleep. Time to to take a rest!", false);
+		Field f8 = new Field(-70, "Black Cave", "You reached the scary Black Cave and get robbed by some bandits who were roaming around the area", false);
+		Field f9 = new Field(60, "Huts in the Mountain", "You find some empty huts in the mountain and find some forgotten cash", false);
+		Field f10 = new Field(-80, "The Werewall (Werewolf - wall)", "You get attacked by some werefolf, but you get a chance to run away", true);
+		Field f11 = new Field(-50, "The pit", "You fell in a pit. Ouch!", false);
+		Field f12 = new Field(650, "Goldmine", "Holy shit is that gold?! You are rich!", false);
 		
 
 		Board b1 = new Board();
@@ -49,7 +49,7 @@ public class GameController {
 		System.out.println(p.Player1 + " landte på " + b1.movePiece(r2.sum()));
 		
 		
-		while(true){
+		
 		switch (b1.movePiece(r2.sum())) {
 		
 		case 2: f2.effectValue(); 
@@ -98,7 +98,6 @@ public class GameController {
 
 		}
 		
-		}
 		
 	}
 
