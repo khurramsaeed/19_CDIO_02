@@ -28,13 +28,4 @@ public class Board {
 		return sum;
 }
 
-	
-	
-	public int feltEffect(){
-		
-		
-		
-		
-		return 0;
-	}
 }

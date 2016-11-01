@@ -12,7 +12,7 @@ public class Field {
 		
 	}
 	public Field(int effect) {
-		this.effect= effect;
+		this.effect = effect;
 	}
 
 	public int getEffectValue() {
