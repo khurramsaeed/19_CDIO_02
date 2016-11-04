@@ -2,7 +2,7 @@ package spil;
 
 
 public class Bank {
-	
+
 int Balance;
 	
 	public Bank(int b){ //Create constructor, returns nothing
@@ -22,5 +22,4 @@ int Balance;
 	
 	
 
-	
 }

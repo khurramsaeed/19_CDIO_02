@@ -19,25 +19,25 @@ public class Field {
 		this.Details = Details;
 	}
 
-	public int getEffectValue() {
-		return (this.effect);
-	}
-	public String getName() {
-		return Name;
-	}
-	public String getDetails() {
-		return Details;
-	}
 	public boolean extraTurn() {
+		
 		return true;
+	}
+	
+	public void landOn(Player p){
+		p.getBank().addEffect(effect);
+		System.out.println(Name);
+		System.out.println(Details);
+		System.out.println(effect);
+		System.out.println(p.bank.Balance);
 	}
 	
 	
 	public String toString(){
 		
 		return "\n" + "Name: " + Name + "\n" + 
-				"Effect on bank: " + effect + "\n" +
-				"Details: " + Details + "\n";
+				"Details: " + Details + "\n" +
+				"Effect on bank: " + effect + "\n";
 
 	}
 	
