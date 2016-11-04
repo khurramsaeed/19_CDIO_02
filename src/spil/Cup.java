@@ -4,7 +4,7 @@ package spil;
 public class Cup {
 	
 	//Oprettelse af Objekter
-	//Ændre type terning, Dice(terningStørrelse)
+	//ï¿½ndre type terning, Dice(terningStï¿½rrelse)
 	Dice t1 = new Dice(6);
 	Dice t2 = new Dice();
 

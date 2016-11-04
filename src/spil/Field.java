@@ -3,7 +3,7 @@ package spil;
 
 public class Field {
 	
-	Bank bank = new Bank();
+
 	
 	int effect;
 	int effectValue;
@@ -21,7 +21,7 @@ public class Field {
 	}
 
 	public int getEffectValue() {
-		return effectValue;
+		return (this.effect);
 	}
 	public String getName() {
 		return Name;
@@ -33,21 +33,19 @@ public class Field {
 		return true;
 	}
 	
-	public int effectValue(){
-		
-		this.effectValue = bank.Balance + effect;
-		
-		return bank.Balance + effect;
-	}
 	
 	public String toString(){
 		
 		
 		
 		
-		return "\n" + "Effect: " + effect + "\n" +
-			    "Name: " + Name + "\n" + 
+		return "\n" + "Name: " + Name + "\n" + 
+				"Effect on bank: " + effect + "\n" +
 				"Details: " + Details + "\n";
+
 	}
+	
 }
+
+	
 	

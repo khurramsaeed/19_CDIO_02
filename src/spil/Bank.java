@@ -2,21 +2,25 @@ package spil;
 
 
 public class Bank {
-
-Board b1 = new Board();
 	
 int Balance;
 	
-public Bank(){
-	this.Balance = Balance;
-}
+	public Bank(int b){
+		Balance = b;
+	}
 
-public void setSum(int x){
-	this.Balance = x;
-}
+	
+	public String toString () {
+		return ("("+Balance+")");
+	}
 
-public void addsum(int y){
-	this.Balance += y;
-}
 
+	public void addEffect(int x){
+		Balance = Balance + x;
+		
+	}
+	
+	
+
+	
 }

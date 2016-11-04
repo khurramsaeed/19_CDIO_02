@@ -14,6 +14,10 @@ public class Player {
 
 	public String getPlayerName(String PlayerName) {
 		this.PlayerName = PlayerName;
+		return PlayerName;
+	}
+	
+	public String toString (){
 		
 		return PlayerName;
 	}
