@@ -61,9 +61,9 @@ public class GameController {
 			
 			Cup c2 = new Cup();
 			
-			System.out.println(p1 + " rolled " + c2.sum());
+			System.out.println(p1 + " rolled " + c2.sum() + "\n");
 			
-			System.out.println(p1 + " landed on : ");
+			
 			
 			
 			
@@ -76,9 +76,8 @@ public class GameController {
 			
 			Cup c3 = new Cup();
 			
-			System.out.println(p2 + " rolled " + c3.sum());
+			System.out.println(p2 + " rolled " + c3.sum() + "\n");
 			
-			System.out.println(p2 + " landed on : ");
 			
 
 			
