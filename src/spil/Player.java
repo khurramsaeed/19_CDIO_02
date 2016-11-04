@@ -1,10 +1,6 @@
 package spil;
 
-
-import java.util.Scanner;
-
 public class Player {
-	Scanner sc = new Scanner(System.in);
 	
 	String PlayerName;
 

@@ -20,7 +20,6 @@ public class GameController {
 	Field f12 = new Field(+650, "Goldmine", "Holy shit is that gold?! You are rich!", false);
 	
 	
-	
 	Board board = new Board();
 	
 	Scanner sc = new Scanner(System.in);
@@ -32,46 +31,42 @@ public class GameController {
 	Bank b2 = new Bank(1000);
 	
 	
-	
-	
 	public static void main(String[] args) {
 		GameController game = new GameController();
 		game.setPlayerName();
 		while(true){
-			
-		System.out.println(game.p1 + ", press 1 to roll");
+			Language.tellPlayer1toRoll(game.p1);
+		//System.out.println(game.p1 + ", press 1 to roll");
 		game.sc.nextInt();
 		game.playerTurn();
 		
 		if(game.b1.Balance >= 3000){
-			System.out.println(game.p1 + "WON!!");
+			Language.tellPlayerWon(game.p1);
+			//System.out.println(game.p1 + "WON!!");
 			System.exit(0);
 		
 		}
-		System.out.println(game.p2+ ", press 2 to roll");
+		Language.tellPlayer2toRoll(game.p2);
 		game.sc.nextInt();
 		game.playerTurn2();
 		
 		if(game.b2.Balance >= 3000){
-			System.out.println(game.p2 + "WON!!");
+			Language.tellPlayerWon(game.p2);
 			System.exit(0);
 			
 		}
 		}
 	}
-	
 
 		public void setPlayerName(){
 			
-			
-			System.out.println("Enter your name Player 1: ");
+			Language.tellPlayer1toEntername();
 			p1.getPlayerName(sc.nextLine());
 			
-			System.out.println("Enter your name Player 2: ");
+			Language.tellPlayer2toEntername();
 			p2.getPlayerName(sc.nextLine());
 			
-			System.out.println("Welcome " + p1 + " and " + p2);
-			
+			Language.sayWelcome(p1, p2);
 			
 		}
 			
@@ -80,9 +75,9 @@ public class GameController {
 			
 			Cup c2 = new Cup();
 			
-			System.out.println(p1 + " rolled " + c2.sum());
+			Language.tellPlayer1Rolled(p1, c2);
 			
-			System.out.println(p1 + " landed on field: " + board.movePiece(c2.sum()));
+			Language.tellPlayer1Field(p1, board, c2);
 			
 			setNewBalance1(c2.sum());
 			
@@ -92,9 +87,9 @@ public class GameController {
 			
 			Cup c3 = new Cup();
 			
-			System.out.println(p2 + " rolled " + c3.sum());
+			Language.tellPlayer2Rolled(p2, c3);
 			
-			System.out.println(p2 + " landed on field: " + board.movePiece(c3.sum()));
+			Language.tellPlayer2Field(p2, board, c3);
 			
 			setNewBalance2(c3.sum());
 		}	
