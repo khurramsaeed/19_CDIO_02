@@ -34,6 +34,7 @@ public class GameController {
 		}
 	}
 	
+	//Sets the player name.
 
 	public void setPlayerName(){
 			
@@ -46,7 +47,8 @@ public class GameController {
 		Language.sayWelcome(p1, p2);
 			
 		}
-			
+		
+	//Starts player turn
 		
 	public void playerTurn(){
 			
@@ -57,7 +59,9 @@ public class GameController {
 		board.fields[c2.sum()].landOn(p1);
 		}
 		
-		
+	
+	//Starts player turn
+	
 	public void playerTurn2(){
 			
 		Cup c3 = new Cup();
