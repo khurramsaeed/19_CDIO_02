@@ -1,21 +1,18 @@
 package spil;
 
-
 public class Cup {
 	
-	//Oprettelse af Objekter
-	//�ndre type terning, Dice(terningSt�rrelse)
+	//Create object
+	//Change dice type, Dice(x)
 	Dice t1 = new Dice(6);
 	Dice t2 = new Dice();
 
-	public Cup() {
+	public Cup() { //Constructor
 		t1.roll();
 		t2.roll();
-
 	}
 
-
-	public int sum() {
+	public int sum() { //Method sum, returns x+y = sum
 
 		int x = t1.getFacevalue();
 		int y = t2.getFacevalue();
@@ -23,9 +20,5 @@ public class Cup {
 		return x + y;
 
 	}
-	
-//	public int getSum (){
-//		
-//		sum()
-//	}
+
 }
