@@ -20,5 +20,4 @@ public class Cup {
 		return x + y;
 
 	}
-
 }

@@ -3,8 +3,7 @@ package spil;
 
 public class Bank {
 
-int Balance;
-	
+int Balance; //not private, it's being used in main
 	public Bank(int b){ //Create constructor, returns nothing
 		Balance = b;
 	}
@@ -19,7 +18,4 @@ int Balance;
 		Balance = Balance + x;
 		
 	}
-	
-	
-
 }

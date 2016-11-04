@@ -1,13 +1,10 @@
 package spil;
 
-
-import java.util.Scanner;
-
 public class Player {
 	
-	Scanner sc = new Scanner(System.in);
-	String PlayerName;
-	Bank bank;
+	
+	String PlayerName; //Not private, it's being used in Language
+	Bank bank; //Not private, it's being used in main
 
 	public Player() {
 		bank  = new Bank(1000);
@@ -27,6 +24,5 @@ public class Player {
 		
 		return bank;
 	}
-
 
 }
