@@ -1,10 +1,14 @@
 package spil;
 
 public class Board {
+	
+	//Creates an array object of Field
 
 	Field[] fields = new Field[13];
 
 	public Board() {
+		
+		//The effect from every field get added into its place in the array
 		
 	     fields[2] = new Field(+250, "You landed  on: Tower","You reached the Tower on your magical journey, in the Tower you found a treasure!");
 	     fields[3] = new Field(-100,"Crater", "You fell in a crater. Ouch!");

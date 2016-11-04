@@ -11,7 +11,7 @@ public class Dice {
 		this.sides = sides;
 	}
 
-	public int getFacevalue() { //
+	public int getFacevalue() { //Returns the facevalue of the dice
 		return facevalue;
 	}
 	
