@@ -1,39 +1,31 @@
 package spil;
 
+
+import java.lang.reflect.Array;
+
 public class Board {
 
-	Cup r1 = new Cup();
-	int[] arraylist = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
 	
+	int[] arraylist = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
+	int piece = 0;
+	int sum;
 
 	public Board() {
-
+ 
 	}
 	
 
-	public int Prik() {
-
-		// Array shifting
-		for (int i = 0; i < r1.sum(); i++) {
-			for (int j = arraylist.length - 1; j > 0; j--) {
-				int temp = arraylist[j];
-				arraylist[j] = arraylist[j - 1];
-				arraylist[j - 1] = temp;
-			}
+	public int movePiece(int sum) {
+		
+		this.sum = sum;
+		
+		if(sum > arraylist[10]){
+		this.piece = sum;	
 		}
-
-		for (int k = 1; k < arraylist.length; k++) {
-			System.out.println(arraylist[k + 0] + " ");
+		else if(sum < arraylist[10]){
+			this.piece = piece + sum;
 		}
+		return sum;
+}
 
-		return arraylist[r1.sum()];
-	}
-	
-	public int feltEffect(){
-		
-		
-		
-		
-		return 300;
-	}
 }
