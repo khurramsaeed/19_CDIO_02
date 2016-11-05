@@ -2,49 +2,25 @@ package spil;
 
 
 public class Field {
-	
-
-	
-	int effect;
-	int effectValue;
+	//Define variables:
+	private int effect;
 	private String Details;
 	private String Name;
-	private boolean extraTurn; 
-
-	public Field(){
-		
-	}
-	public Field(int effect, String Name, String Details, boolean extraTurn) {
+	
+	//Field constructor is created with and integer and two strings
+	public Field(int effect, String Name, String Details) {
 		this.effect = effect;
 		this.Name = Name;
 		this.Details = Details;
 	}
 
-	public int getEffectValue() {
-		return (this.effect);
-	}
-	public String getName() {
-		return Name;
-	}
-	public String getDetails() {
-		return Details;
-	}
-	public boolean extraTurn() {
-		return true;
-	}
-	
-	
-	public String toString(){
-		
-		
-		
-		
-		return "\n" + "Name: " + Name + "\n" + 
-				"Effect on bank: " + effect + "\n" +
-				"Details: " + Details + "\n";
 
-	}
+	//This methods shows which field the player lands on and adds the effect to the Balance
+	public void landOn(Player p){
+		p.getBank().addEffect(effect);
+		Language.landedOn(Name, Details, effect, p.getBank());
 	
+	}
 }
 
 	
