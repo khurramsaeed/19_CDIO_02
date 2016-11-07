@@ -55,5 +55,9 @@ public class Language {
 		System.out.println("Effect on bank: "+ e);
 		System.out.println("Your bank balance is now: " + bank.Balance);
 	}
+	public static void Extraturnp(){
+		System.out.println("You get a extra turn");
+		System.out.println(" ");
+	}
 	
 }
